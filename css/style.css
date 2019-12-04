@@ -151,7 +151,7 @@ body{
 .social-2 a{
     color: black;
     font-size: 25px;
-    padding: 5px 20px;
+    padding: 5px 15px;
 }
 
 .social-2 .btn-facebook i:hover{
@@ -185,3 +185,21 @@ body{
     opacity: 1;
 
 }
+
+/* FORM */
+
+textarea, input{
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid #ccc;
+    transition: .5s ease;
+}
+
+textarea:focus, 
+input:focus, input:active{
+    border-bottom: 2px solid #1D2D4B;
+    outline: none;
+}
+
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus{

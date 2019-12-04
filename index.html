@@ -19,7 +19,7 @@
 	<nav class="navbar fixed-top navbar-expand-lg bg-yellow">
       <div class="container" id="menu">
         <a class="navbar-brand" href="#inicio">
-          <img src="./img/logo.png" alt="" width="180">
+          <img src="./img/logo.jpeg" alt="" width="100">
           </a>
         <button class="navbar-toggler btn btn-primary-outline" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars text-blue"></i>
@@ -110,42 +110,85 @@
   </div>
 
   <!-- PROMO -->
-  <section class="promo p-1 p-md-5">
-    <div class="row m-0">
-      <div class="col-md-6">
-        <div class="mx-2 desconto">
-          <h2 class="display-1 text-yellow font-weight-bold">40<span class="ml-1 h1 text-yellow">%</span></h2><span class="h2 font-weight-bold"> DE</span>
-          <p class="d-block font-weight-bold h1">Desconto</p>
+    <section class="promo p-1 p-md-5">
+      <div class="row m-0">
+        <div class="col-md-6">
+          <div class="mx-2 desconto">
+            <h2 class="display-1 text-yellow font-weight-bold">40<span class="ml-1 h1 text-yellow">%</span></h2><span class="h2 font-weight-bold"> DE</span>
+            <p class="d-block font-weight-bold h1">Desconto</p>
+          </div>
+          <div class="clearfix">
+            <h4 class="font-weight-bold">Não perca essa oferta Limitada!</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, ipsum.</p>
+          </div>
         </div>
-        <div class="clearfix">
-          <h4 class="font-weight-bold">Não perca essa oferta Limitada!</h4>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, ipsum.</p>
       </div>
-    </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="bg-yellow p-4">
-<!--- INICIO SOCIAL 2 -->
-
-<div class="social-2">
-    <div class="text-center">
-        <div>
-            <a class="btn-facebook" href="#">
-                <i class="fab fa-facebook"></i></a>
-            <a class="btn-instagram" href="#">
-                <i class="fab fa-instagram"></i></a>
-            <a class="btn-pinterest" href="#">
-                <i class="fab fa-pinterest"></i></a>
-            <a class="btn-whatsapp" href="#">
-                <i class="fab fa-whatsapp"></i></a>
+    <!-- CONTATO -->
+    <section class="contato py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 order-2 order-md-1 py-2">
+            <h2>Vamos manter contato?</h2>
+            <p>Nos deixe uma mensagem que iremos responder rapidinho!</p>
+              <form name="formContact" action="formContact.php" id="formContact" method="POST">
+                <div class="row">
+                    <div class="col-md-6 pt-3">
+                      <input type="text" placeholder="Nome" class="w-100" name="formName" id="formName" required="required" aria-label="nome">
+                      <small class="text-danger" id="formErrorName"></small>
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <input type="text" placeholder="Sobrenome" class="w-100" name="formName" id="formName" required="required" aria-label="nome">
+                        <small class="text-danger" id="formErrorName"></small>
+                      </div>
+                    <div class="col-md-6 pt-3">
+                      <input type="email" placeholder="Email" class="w-100" name="formEmail" id="formEmail" required="required" aria-label="email">
+                      <small class="text-danger" id="formErrormail"></small>
+                    </div>
+                    <div class="col-md-6 pt-3">
+                      <input type="text" placeholder="Telefone" class="w-100 sp_celphones" name="formTel" id="formTel" required="required" aria-label="telefone">
+                      <small class="text-danger" id="formErrorTel"></small> 
+                    </div>
+                    <div class="col-md-12 pt-3">
+                      <textarea type="text" placeholder="Mensagem" class="w-100" name="formMessage" id="formMessage" required="required" aria-label="telefone" maxlength="300"></textarea>
+                      
+                      <small class="text-danger" id="formErrorMsg"></small> 
+                    <div class="pt-3">
+                      <button type="button" class="btn btn-success" id="formSubmit">
+                        Enviar mensagem
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                </form>
+            </div>
+          <div class="col-md-4 bg-yellow d-flex align-items-center justify-content-center order-1 order-md-2">
+            <img src="./img/logo.jpeg" class="img-fluid p-3" alt="Moda Store Campinas">
+          </div>
         </div>
-    </div>
-</div>
-<hr>
-<!--- FIM SOCIAL 2 -->
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-yellow p-4">
+      <div class="social-2">
+          <div class="text-center">
+              <div>
+                  <a class="btn-facebook" href="#">
+                      <i class="fab fa-facebook"></i></a>
+                  <a class="btn-instagram" href="#">
+                      <i class="fab fa-instagram"></i></a>
+                  <a class="btn-pinterest" href="#">
+                      <i class="fab fa-pinterest"></i></a>
+                  <a class="btn-whatsapp" href="#">
+                      <i class="fab fa-whatsapp"></i></a>
+              </div>
+          </div>
+      </div>
+      <hr>
       <div class="text-center">© 2019. Desenvolvido por <a href="">RC WebSites</a></div>
-  </footer>
+    </footer>
       
     
     <!-- Optional JavaScript -->
