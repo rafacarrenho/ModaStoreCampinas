@@ -1,0 +1,187 @@
+@font-face{
+    font-family: ms;
+    src: url('../fonts/ms.woff')  ;
+}
+
+body{
+    font-family: ms;
+}
+
+.text-yellow{
+    color: #F3FF07;
+}
+
+.bg-yellow{
+    background-color: #F3FF07;
+}
+
+.text-blue{
+    color: #1D2D4B !important;
+}
+
+.bg-blue{
+    background-color: #1D2D4B;
+}
+
+.text-black{
+    color: black;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+.title span{
+    position: relative;
+    font-weight: bold;
+}
+
+.title h2 span:before{
+    content: "";
+    position: absolute;
+    top: 49%;
+    left: -70px;
+    bottom: 0;
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: #F3FF07;
+}
+
+.title h2 span:after {
+    position: absolute;
+    top: 49%;
+    right: -70px;
+    bottom: 0;
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: #F3FF07;
+}
+
+/*------------------------*\
+ NAV
+\*------------------------*/
+
+.navbar{
+    transition: 1s ease;
+}
+.navbar.hide{
+    transform: translateY(-100%);
+}
+
+
+/*------------------------*\
+.CLIENTES QUOTE
+\*------------------------*/
+
+.clientes-quote{
+    background-color: white;
+}
+
+.clientes-quote i{
+    color: #F3FF07;;
+}
+.clientes-quote h1{
+    color: #F3FF07;
+    font-weight: 900;
+    padding-top: 20px;
+}
+
+.clientes-quote-depo{
+    background-color: white;
+    box-shadow: 5px 5px 15px #ccc;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.clientes-quote .cli-pic{
+    width: 80px !important;
+    border-radius: 50%;
+    margin-left: -65px;
+    box-shadow: 1px 0 5px;
+}
+
+.clientes-quote .cli-name{
+    color: #F3FF07;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.clientes-quote i{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 577px){
+    .clientes-quote .cli-pic{
+        margin: auto;
+        margin-top: -50px;
+    }
+}
+
+/*------------------------*\
+    PROMO
+\*------------------------*/
+
+.promo{
+    background: linear-gradient(to right, rgba(255, 255, 255,1), rgba(255, 255, 255,.1)), url('../img/bg1.jpg'); 
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.promo h2{
+    display: inline-block;
+    position: relative;
+}
+
+.promo h2 span{
+    position: absolute;
+}
+
+.promo .desconto p{
+    margin-top: -40px;
+}
+
+/*------------------------*\
+.SOCIAL 2
+\*------------------------*/
+
+.social-2 a{
+    color: black;
+    font-size: 25px;
+    padding: 5px 20px;
+}
+
+.social-2 .btn-facebook i:hover{
+    color: #4267B2;
+    border-color: #4267B2;
+}
+
+.social-2 .btn-instagram i:hover{
+    color: #625BDD;
+    border-color: #625BDD;
+}
+
+.social-2 .btn-pinterest i:hover{
+    color: #BD081C;
+    border-color: #BD081C;
+}
+
+.social-2 .btn-whatsapp i:hover{
+    color: #28A745;
+    border-color: #28A745;
+}
+.social-2 i{
+    transition: .4s ease;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.social-2 i:hover{
+    transform: scale(1.2);
+    opacity: 1;
+
+}
