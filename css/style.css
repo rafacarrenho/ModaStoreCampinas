@@ -8,11 +8,11 @@ body{
 }
 
 .text-yellow{
-    color: #F3FF07;
+    color: #FFF100;
 }
 
 .bg-yellow{
-    background-color: #F3FF07;
+    background-color: #FFF100;
 }
 
 .bg-secondary{
@@ -64,6 +64,10 @@ body{
     background-color: #F8D700;
 }
 
+iframe{
+    border: none;
+}
+
 /*------------------------*\
  NAV
 \*------------------------*/
@@ -85,7 +89,7 @@ body{
 }
 
 .clientes-quote i{
-    color: #F8D700;;
+    color: #F8D700;
 }
 .clientes-quote h1{
     color: #F8D700;
@@ -148,6 +152,7 @@ body{
 
 .owl-moda img{
     max-height: 300px;
+    cursor: pointer;
 }
 /*------------------------*\
     PROMO
@@ -212,6 +217,19 @@ body{
     transform: scale(1.2);
     opacity: 1;
 
+}
+
+/*------------------------*\
+ENDEREÇO
+\*------------------------*/
+
+.endereco .col-2 i{
+    font-size: 24px;
+    color:  #1D2D4B;
+}
+
+.endereco .click{
+    color: rgb(27, 83, 187);
 }
 
 /*------------------------*\
