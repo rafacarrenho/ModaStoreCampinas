@@ -65,7 +65,7 @@ body{
 }
 
 iframe{
-    border: none;
+    border: 1px solid #FFF100;
 }
 
 /*------------------------*\
@@ -224,7 +224,7 @@ ENDEREÇO
 \*------------------------*/
 
 .endereco .col-2 i{
-    font-size: 24px;
+    font-size: 20px;
     color:  #1D2D4B;
 }
 
