@@ -34,27 +34,28 @@ body{
 .title span{
     position: relative;
     font-weight: bold;
+    overflow: hidden;
 }
 
-.title h2 span:before{
+.title h3 span:before{
     content: "";
     position: absolute;
     top: 49%;
-    left: -70px;
+    left: -50px;
     bottom: 0;
     content: '';
-    width: 60px;
+    width: 40px;
     height: 2px;
     background-color: #F3FF07;
 }
 
-.title h2 span:after {
+.title h3 span:after {
     position: absolute;
     top: 49%;
-    right: -70px;
+    right: -50px;
     bottom: 0;
     content: '';
-    width: 60px;
+    width: 40px;
     height: 2px;
     background-color: #F3FF07;
 }
@@ -122,6 +123,29 @@ body{
 }
 
 /*------------------------*\
+    CAROUSEL
+\*------------------------*/
+
+.owl-nav{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(51, 79, 116);
+}
+
+.owl-prev, .owl-next{
+    margin: 10px 20px;
+    outline: none;
+}
+
+.owl-prev:focus, .owl-next:focus{
+    outline: none;
+}
+
+.owl-moda img{
+    max-height: 300px;
+}
+/*------------------------*\
     PROMO
 \*------------------------*/
 
@@ -151,7 +175,7 @@ body{
 .social-2 a{
     color: black;
     font-size: 25px;
-    padding: 5px 15px;
+    padding: 5px 10px;
 }
 
 .social-2 .btn-facebook i:hover{
@@ -200,6 +224,3 @@ input:focus, input:active{
     border-bottom: 2px solid #1D2D4B;
     outline: none;
 }
-
-.btn:focus,.btn:active:focus,.btn.active:focus,
-.btn.focus,.btn:active.focus,.btn.active.focus{

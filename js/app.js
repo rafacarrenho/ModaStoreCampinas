@@ -29,7 +29,7 @@ $('nav #menu a').click(function(e){
   });
 
 /*------------------------*\
-    OWL CAROUSEL
+    OWL CAROUSEL DEPOIMENTOS
 \*------------------------*/
 
 $(".owl-clientes-quote").owlCarousel({
@@ -37,8 +37,8 @@ $(".owl-clientes-quote").owlCarousel({
     autoplayTimeout:6000,
     loop:true,
     margin:10,
-    dots: false,
     responsiveClass:true,
+    dots:false,
     nav: true,
     navContainerClass: 'owl-nav',
     navClass: ['owl-prev', 'owl-next'],
@@ -48,6 +48,40 @@ $(".owl-clientes-quote").owlCarousel({
     },
     960:{
         items:2
+    }
+    }
+});
+
+/*------------------------*\
+    OWL CAROUSEL DEPOIMENTOS
+\*------------------------*/
+
+$(".owl-moda").owlCarousel({
+    items:3,
+    autoplay: true,
+    autoplayTimeout:6000,
+    loop:true,
+    nav: true,
+    navContainerClass: 'owl-nav',
+    navClass: ['owl-prev', 'owl-next'],
+    margin: 10,
+    dots: false,
+    responsiveClass:true,
+    responsive:{
+    0:{
+        items:1
+    },
+    480:{
+        items:2
+    },
+    960:{
+        items:3
+    },
+    1500:{
+        items:4
+    },
+    2200:{
+        items:5
     }
     }
 });
