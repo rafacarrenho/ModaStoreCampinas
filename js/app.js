@@ -85,3 +85,26 @@ $(".owl-moda").owlCarousel({
     }
     }
 });
+
+/*------------------------*\
+  #MODAL-GALERIA
+\*------------------------*/
+
+$('.owl-carousel .item img').click(function(){
+    let modal = document.getElementById("modal-galeria");
+    let modalImg = document.getElementById("img");
+    let captionText = document.getElementById("caption");
+
+    $("#modal-galeria").fadeToggle()
+    
+    modalImg.src = $(this).attr("src");
+    captionText.innerHTML = $(this).attr("alt");
+
+      // Get the <span> element that closes the modal
+    let span = document.getElementsByClassName("close")[0];
+
+});
+
+$('.modal').click(function(){
+    $("#modal-galeria").fadeToggle()
+})

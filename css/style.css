@@ -15,6 +15,10 @@ body{
     background-color: #F3FF07;
 }
 
+.bg-secondary{
+    background-color:#FAFAFA !important;
+}
+
 .text-blue{
     color: #1D2D4B !important;
 }
@@ -46,7 +50,7 @@ body{
     content: '';
     width: 40px;
     height: 2px;
-    background-color: #F3FF07;
+    background-color: #F8D700;
 }
 
 .title h3 span:after {
@@ -57,7 +61,7 @@ body{
     content: '';
     width: 40px;
     height: 2px;
-    background-color: #F3FF07;
+    background-color: #F8D700;
 }
 
 /*------------------------*\
@@ -81,10 +85,10 @@ body{
 }
 
 .clientes-quote i{
-    color: #F3FF07;;
+    color: #F8D700;;
 }
 .clientes-quote h1{
-    color: #F3FF07;
+    color: #F8D700;
     font-weight: 900;
     padding-top: 20px;
 }
@@ -105,7 +109,7 @@ body{
 }
 
 .clientes-quote .cli-name{
-    color: #F3FF07;
+    color: #F8D700;
     font-weight: 600;
     font-size: 20px;
 }
@@ -210,7 +214,9 @@ body{
 
 }
 
-/* FORM */
+/*------------------------*\
+    FORM
+\*------------------------*/
 
 textarea, input{
     border: none;
@@ -223,4 +229,58 @@ textarea:focus,
 input:focus, input:active{
     border-bottom: 2px solid #1D2D4B;
     outline: none;
+}
+
+/*------------------------*\
+    MODAL-GALERIA
+\*------------------------*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    transition: .5 ease;
+}
+
+
+#modal-galeria .modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    height: 80%;
+    max-width: 700px;
+}
+
+#modal-galeria #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+#modal-galeria .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+    
+#modal-galeria .close:hover,
+#modal-galeria .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
