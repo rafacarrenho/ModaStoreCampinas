@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 /* Deslizar suavemente ao Scroll */
 $('nav #menu a').click(function(e){
-    $(".navbar-toggler").click();
+    /* $(".navbar-toggler").click(); */
       e.preventDefault();
       var id = $(this).attr('href'),
           targetOffSet = $(id).offset().top;

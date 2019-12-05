@@ -15,7 +15,7 @@
     <!-- Meu CSS -->
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body>
+  <body id="inicio">
      <!-- Navigation -->
 	<nav class="navbar fixed-top navbar-expand-lg bg-yellow">
       <div class="container" id="menu">
@@ -30,14 +30,18 @@
           <li class="nav-item active">
             <a class="nav-link text-blue font-weight-bold" href="#inicio">Inicio</a>
           </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-blue font-weight-bold" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Moda
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#mdMasculina">Moda Masculina</a>
+                <a class="dropdown-item" href="#mdFeminina">Moda Feminina</a>
+                <a class="dropdown-item" href="#mdInfantil">Moda Infantil</a>
+              </div>
+            </li>
           <li class="nav-item">
             <a class="nav-link text-blue font-weight-bold" href="#contato">Contato</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-blue font-weight-bold" href="#sobre">Sobre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-blue font-weight-bold" href="#quemSomos">Quem somos</a>
           </li>
         </ul>
         </div>
@@ -127,7 +131,7 @@
     </section>
 
     <!-- MODA MASCULINA-->
-    <section class="pt-4">
+    <section class="pt-4" id="mdMasculina">
       <div class="title py-4">
         <h3 class="text-blue text-center text-uppercase"><span>Moda Masculina</span></h3>
       </div>
@@ -147,7 +151,7 @@
     </section>
 
     <!-- MODA FEMININA-->
-    <section class="pt-4">
+    <section class="pt-4" id="mdFeminina">
         <div class="title py-4">
           <h3 class="text-blue text-center text-uppercase"><span>Moda Feminina</span></h3>
         </div>
@@ -167,7 +171,7 @@
     </section>
 
     <!-- MODA INFANTIL-->
-    <section class="pt-4">
+    <section class="pt-4" id="mdInfantil">
         <div class="title py-4">
           <h3 class="text-blue text-center text-uppercase"><span>Moda Infantil</span></h3>
         </div>
@@ -187,7 +191,7 @@
     </section>
 
     <!-- MODA INFANTIL-->
-    <section class="py-4 bg-secondary endereco">
+    <section class="py-4 bg-secondary endereco" id="contato">
         <div class="title py-4">
             <h3 class="text-blue text-center text-uppercase"><span>Onde estamos?</span></h3>
         </div>
