@@ -84,12 +84,17 @@ iframe{
 \*------------------------*/
 
 .banner{
-    background-image: url('../img/bannermoda.jpg');
+    background-image: linear-gradient(rgba(227, 241, 30,.5), black) ,url('../img/bannermoda.jpg');
     background-size: cover;
     background-position: center;
     height: 450px;
     margin-top: 80px;
     background-color: #FFF100;
+    /* filter: grayscale(100%); */
+}
+
+.banner h1{
+    text-shadow: 5px 5px 8px #1D2D4B;;
 }
 
 /*------------------------*\
