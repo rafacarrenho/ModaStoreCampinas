@@ -108,3 +108,60 @@ $('.owl-carousel .item img').click(function(){
 $('.modal').click(function(){
     $("#modal-galeria").fadeToggle()
 })
+
+/*------------------------*\
+  FORMULARIO
+\*------------------------*/
+function checkName(){
+    let checkName = ($("#formName").val()) == '' ? "Preencha o seu nome." : "";
+      $('#formErrorName').html(checkName)
+  }
+  
+  function checkEmail(){
+    let sEmail = $('#formEmail').val();
+    let filter = /^[\w-.+]+@[a-zA-Z0-9.-]+.[a-zA-z0-9]{2,4}$/
+    let checkEmail = filter.test(sEmail) ? "" : "Preencha com um E-mail válido";
+    $('#formErrormail').html(checkEmail);
+  }
+  
+  function checkTel(){
+    let CheckTel = $('#formTel').val().length < 14 ? "Preencha com o seu telefone com DDD." : "";
+      $('#formErrorTel').html(CheckTel)
+  }
+  
+  function checkForm(){
+    checkName();
+    checkEmail();
+    checkTel();
+  
+    let verifyError = ($('form small')).text().length
+    if (verifyError != 0){
+      return
+    } else{
+      $('#formContact').submit();
+    }
+  
+  }
+  
+  //NOME
+  $('#formName').blur(checkName)
+  
+  //  EMAIL
+  $('#formEmail').blur(checkEmail)
+    
+  // TELEFONE
+  $(document).ready(function(){
+      var SPMaskBehavior = function (val) {
+      return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+    },
+    spOptions = {
+      onKeyPress: function(val, e, field, options) {
+          field.mask(SPMaskBehavior.apply({}, arguments), options);
+        }
+    };
+    $('.sp_celphones').mask(SPMaskBehavior, spOptions);
+  });
+  
+  $('#formTel').blur(checkTel)
+  
+  $('#formSubmit').click(checkForm)
