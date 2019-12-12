@@ -45,6 +45,7 @@
     }
 
     $mail = new PHPMailer(true);
+
     try {
     $body = '';
     $body .= "<h2>Contato recebido via Site</h2>";
@@ -93,10 +94,9 @@
     $mail->AltBody = 'Provedor de email não aceita mensagem de HTML, favor entrar em contato com o suporte';
 
     $mail->send();
-        echo 'Mensagem enviada com sucesso.';
+        echo 'Success';
     
     } catch (Exception $e) {
-        echo 'Erro ao Enviar, favor tente mais tarde.';
-        // echo $e->errorMessage(); //retorno devolvido para o ajax caso erro
-}
+        echo 'Erro';
+}//
 ?>
