@@ -337,7 +337,7 @@
                       <button type="button" class="btn btn-success" id="formSubmit">
                         Enviar mensagem
                       </button>
-                      <div id="retornoHTML"></div>
+                      <img class="loading" src="./img/loading.gif" alt="Loading">
                     </div>
                   </div>
                 </div>
@@ -384,22 +384,23 @@
       <div class="modal-content bg-white">
         <!-- <span class="close">&times;</span> -->
         <div class="d-flex flex-column align-items-center justify-content-center p-4">
-          <img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">
+          <img class="img-fluid" src="./img/success.png" alt="Sucesso">
           <h1>Obrigado!</h1>
           <p>Seu email foi recebido e entraremos em contato em breve.</p>
         </div>
       </div>
     </div>
 
-    <!-- MODAL ERRO ENVIO FORMULARIO
-    <div class="modal-error">
-      <div class="d-flex flex-column align-items-center justify-content-center">
-        <img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">
-        <h1>Thank You!</h1>
-        <p>Your submission is received and we will contact you soon</p>
+    <!-- MODAL ERRO ENVIO FORMULARIO -->
+    <div class="modal-error modal">
+      <div class="modal-content bg-white">
+        <!-- <span class="close">&times;</span> -->
+        <div class="d-flex flex-column align-items-center justify-content-center p-4">
+        <img class="img-fluid" src="./img/error.png" alt="Erro">
+        <h1>Algo deu errado!</h1>
+        <p>Nos desculpe, mas algo deu errado com o envio deste email, favor tente novamente mais tarde.</p>
       </div>
     </div>
-    -->
       
     
     <!-- Optional JavaScript -->

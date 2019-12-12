@@ -322,6 +322,6 @@ input:focus, input:active{
     cursor: pointer;
 }
 
-.modal-success{
+.modal-success, .modal-error, .loading{
     display: none;
 }

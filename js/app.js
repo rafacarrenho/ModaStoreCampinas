@@ -166,17 +166,33 @@ function checkName(){
             async: true,
             data: urlData, /* informa Url */
             success: function(data) { /* sucesso */
-                
+                console.log(data)
+                if (data == 'Success'){
+                    $('.modal-success').fadeToggle();
+                    setTimeout(function(){
+                        $('.modal-success').fadeToggle();
+                    }, 3000);
+                } else {
+                    $('.modal-error').fadeToggle();
+                setTimeout(function(){
+                    $('.modal-error').fadeToggle();
+                }, 3000);
+                }
             },
             beforeSend: function() { /* antes de enviar */
-                $('.modal-success').fadeToggle();
+                $('.loading').fadeToggle();
             },
             complete: function(){ /* completo */
-                $('.modal-success').fadeToggle();
+                $('.loading').fadeToggle();
+            },
+            error: function(data){ /* erro */
+                $('.modal-error').fadeToggle();
+                setTimeout(function(){
+                    $('.modal-error').fadeToggle();
+                }, 3000);
             }
         });
-      }
-      
+      }   
   }
   
   //NOME
