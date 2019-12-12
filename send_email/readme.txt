@@ -1,0 +1,1 @@
+Não esquecer de por segurança jogar o arquivo fora do diretório publico do servidor!!

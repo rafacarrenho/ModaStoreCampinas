@@ -311,14 +311,14 @@
           <div class="col-md-8 order-2 order-md-1 py-2">
             <h2 class="mt-3 mt-md-0">Vamos manter contato?</h2>
             <p>Nos deixe uma mensagem que iremos responder rapidinho!</p>
-              <form name="formContact" action="formContact.php" id="formContact" method="POST">
+              <form id="formContact">
                 <div class="row">
                     <div class="col-md-6 pt-3">
                       <input type="text" placeholder="Nome" class="w-100" name="formName" id="formName" required="required" aria-label="nome">
                       <small class="text-danger" id="formErrorName"></small>
                     </div>
                     <div class="col-md-6 pt-3">
-                        <input type="text" placeholder="Sobrenome" class="w-100" name="formName" id="formName" required="required" aria-label="nome">
+                        <input type="text" placeholder="Sobrenome" class="w-100" name="formSName" id="formSName" required="required" aria-label="nome">
                         <small class="text-danger" id="formErrorName"></small>
                       </div>
                     <div class="col-md-6 pt-3">
@@ -337,6 +337,7 @@
                       <button type="button" class="btn btn-success" id="formSubmit">
                         Enviar mensagem
                       </button>
+                      <div id="retornoHTML"></div>
                     </div>
                   </div>
                 </div>
@@ -371,20 +372,40 @@
       <div class="text-center">© 2019. Desenvolvido por <a href="">RC WebSites</a></div>
     </footer>
 
+    <!-- MODAL FOTOS-->
     <div id="modal-galeria" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content img-thumbnail" id="img">
         <div id="caption"></div>
     </div>
+
+    <!-- MODAL SUCESSO ENVIO FORMULARIO -->
+    <div class="modal-success modal">
+      <div class="modal-content bg-white">
+        <!-- <span class="close">&times;</span> -->
+        <div class="d-flex flex-column align-items-center justify-content-center p-4">
+          <img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">
+          <h1>Obrigado!</h1>
+          <p>Seu email foi recebido e entraremos em contato em breve.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL ERRO ENVIO FORMULARIO
+    <div class="modal-error">
+      <div class="d-flex flex-column align-items-center justify-content-center">
+        <img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">
+        <h1>Thank You!</h1>
+        <p>Your submission is received and we will contact you soon</p>
+      </div>
+    </div>
+    -->
       
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./js/lazyload.js" async></script>
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>

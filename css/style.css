@@ -321,3 +321,7 @@ input:focus, input:active{
     text-decoration: none;
     cursor: pointer;
 }
+
+.modal-success{
+    display: none;
+}

@@ -100,12 +100,12 @@ $('.owl-carousel .item img').click(function(){
     modalImg.src = $(this).attr("src");
     captionText.innerHTML = $(this).attr("alt");
 
-      // Get the <span> element that closes the modal
+    // Get the <span> element that closes the modal
     let span = document.getElementsByClassName("close")[0];
 
 });
 
-$('.modal').click(function(){
+$('#modal-galeria').click(function(){
     $("#modal-galeria").fadeToggle()
 })
 
@@ -129,6 +129,11 @@ function checkName(){
       $('#formErrorTel').html(CheckTel)
   }
   
+
+  function limpaForm(){
+    $('#formContact input, #formContact textarea').val('');
+  }
+
   function checkForm(){
     checkName();
     checkEmail();
@@ -138,9 +143,40 @@ function checkName(){
     if (verifyError != 0){
       return
     } else{
-      $('#formContact').submit();
-    }
-  
+      /* Coletando dados */
+      var nome  = $('#formName').val();
+      var sobrenome  = $('#formSName').val();
+      var email = $('#formEmail').val();
+      var telefone = $('#formTel').val();
+      var mensagem = $('#formMessage').val();
+
+      /* construindo url */
+      var urlData = "&nome=" + nome +
+      "&sobrenome=" + sobrenome +
+      "&email=" + email +
+      "&telefone=" + telefone +
+      "&mensagem=" + mensagem ;
+
+      limpaForm();
+
+      /* Ajax */
+      $.ajax({
+            type: "POST",
+            url: "processa_envio.php", /* endereço do script PHP */
+            async: true,
+            data: urlData, /* informa Url */
+            success: function(data) { /* sucesso */
+                
+            },
+            beforeSend: function() { /* antes de enviar */
+                $('.modal-success').fadeToggle();
+            },
+            complete: function(){ /* completo */
+                $('.modal-success').fadeToggle();
+            }
+        });
+      }
+      
   }
   
   //NOME
