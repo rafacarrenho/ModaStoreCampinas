@@ -11,10 +11,11 @@
 
 
     class Mensagem {
-        private $nome = null;
-        private $sobrenome = null;
-        private $telefone = null;
-        private $mensagem = null;
+        private $formName = null;
+        private $formSName = null;
+        private $formEmail = null;
+        private $formTel = null;
+        private $formMessage = null;
 
         public function __get($atributo){
             return $this->$atributo;
@@ -25,7 +26,7 @@
         }
 
         public function mensagemValida(){
-            if(empty($this->nome) || empty($this->telefone) || empty($this->email)){
+            if(empty($this->formName) || empty($this->formTel) || empty($this->formEmail)){
                 return false;
             }
             return true;
@@ -33,11 +34,11 @@
     }
 
     $mensagem = new Mensagem();
-    $mensagem->__set('nome', $_POST['nome']);
-    $mensagem->__set('sobrenome', $_POST['sobrenome']);
-    $mensagem->__set('email', $_POST['email']);
-    $mensagem->__set('telefone', $_POST['telefone']);
-    $mensagem->__set('mensagem', $_POST['mensagem']);
+    $mensagem->__set('formName', $_POST['formName']);
+    $mensagem->__set('formSName', $_POST['formSName']);
+    $mensagem->__set('formEmail', $_POST['formEmail']);
+    $mensagem->__set('formTel', $_POST['formTel']);
+    $mensagem->__set('formMessage', $_POST['formMessage']);
 
     if(!$mensagem->mensagemValida()){
         header('location: index.html');
@@ -49,11 +50,11 @@
     try {
     $body = '';
     $body .= "<h2>Contato recebido via Site</h2>";
-    $body .= "Nome: " . $mensagem->__get('nome') . " " . $mensagem->__get('sobrenome') . "<br>";
-    $body .= "E-mail: " . $mensagem->__get('email') . "<br>";
-    $body .= "Telefone: " . $mensagem->__get('telefone') . "<br>";
+    $body .= "Nome: " . $mensagem->__get('formName') . " " . $mensagem->__get('formSName') . "<br>";
+    $body .= "E-mail: " . $mensagem->__get('formEmail') . "<br>";
+    $body .= "Telefone: " . $mensagem->__get('formTel') . "<br>";
     $body .= "Mensagem:<br>";
-    $body .= $mensagem->__get('mensagem');
+    $body .= $mensagem->__get('formMessage');
     $body .= "<br>";
     $body .= "----------------------------";
     $body .= "<br>";
@@ -97,6 +98,6 @@
         echo 'Success';
     
     } catch (Exception $e) {
-        echo 'Erro';
+        echo "Erro $e";
 }//
 ?>

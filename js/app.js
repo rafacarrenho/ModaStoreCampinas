@@ -144,18 +144,27 @@ function checkName(){
       return
     } else{
       /* Coletando dados */
+
+      /*
       var nome  = $('#formName').val();
       var sobrenome  = $('#formSName').val();
       var email = $('#formEmail').val();
       var telefone = $('#formTel').val();
       var mensagem = $('#formMessage').val();
+      */
+
+     var urlData = $('#formContact').serialize();
+     console.log(urlData)
+     
 
       /* construindo url */
+      /*
       var urlData = "&nome=" + nome +
       "&sobrenome=" + sobrenome +
       "&email=" + email +
       "&telefone=" + telefone +
       "&mensagem=" + mensagem ;
+      */
 
       limpaForm();
 
@@ -166,7 +175,6 @@ function checkName(){
             async: true,
             data: urlData, /* informa Url */
             success: function(data) { /* sucesso */
-                console.log(data)
                 if (data == 'Success'){
                     $('.modal-success').fadeToggle();
                     setTimeout(function(){
