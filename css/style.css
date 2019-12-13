@@ -303,6 +303,12 @@ input:focus, input:active{
     max-height: calc(100vh - 200px);
 }
 
+@media (max-height: 600px) {
+    #modal-galeria img{
+        max-height: 100%;
+    }
+}
+
 #modal-galeria #caption {
     margin: auto;
     display: block;
@@ -330,6 +336,8 @@ input:focus, input:active{
     text-decoration: none;
     cursor: pointer;
 }
+
+
 
 .modal-success, .modal-error, .loading{
     display: none;
