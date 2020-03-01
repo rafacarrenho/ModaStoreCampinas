@@ -1,344 +1,363 @@
-@font-face{
-    font-family: ms;
-    src: url('../fonts/ms.woff')  ;
+@font-face {
+  font-family: ms;
+  src: url("../fonts/ms.woff");
 }
 
-body{
-    font-family: ms;
+body {
+  font-family: ms;
 }
 
-.text-yellow{
-    color: #FFF100;
+.text-yellow {
+  color: #fff100;
 }
 
-.bg-yellow{
-    background-color: #FFF100;
+.bg-yellow {
+  background-color: #fff100;
 }
 
-.bg-secondary{
-    background-color:#FAFAFA !important;
+.bg-secondary {
+  background-color: #fafafa !important;
 }
 
-.text-blue{
-    color: #1D2D4B !important;
+.text-blue {
+  color: #1d2d4b !important;
 }
 
-.bg-blue{
-    background-color: #1D2D4B;
+.bg-blue {
+  background-color: #1d2d4b;
 }
 
-.text-black{
-    color: black;
+.text-black {
+  color: black;
 }
 
-.bg-black{
-    background-color: black;
+.bg-black {
+  background-color: black;
 }
 
-.title span{
-    position: relative;
-    font-weight: bold;
-    overflow: hidden;
+.title span {
+  position: relative;
+  font-weight: bold;
+  overflow: hidden;
 }
 
-.title h3 span:before{
-    content: "";
-    position: absolute;
-    top: 49%;
-    left: -50px;
-    bottom: 0;
-    content: '';
-    width: 40px;
-    height: 2px;
-    background-color: #F8D700;
+.title h3 span:before {
+  content: "";
+  position: absolute;
+  top: 49%;
+  left: -50px;
+  bottom: 0;
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: #f8d700;
 }
 
 .title h3 span:after {
-    position: absolute;
-    top: 49%;
-    right: -50px;
-    bottom: 0;
-    content: '';
-    width: 40px;
-    height: 2px;
-    background-color: #F8D700;
+  position: absolute;
+  top: 49%;
+  right: -50px;
+  bottom: 0;
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: #f8d700;
 }
 
-iframe{
-    border: 1px solid #FFF100;
+iframe {
+  border: 1px solid #fff100;
 }
 
 /*------------------------*\
  NAV
 \*------------------------*/
 
-.navbar{
-    transition: 1s ease;
+.navbar {
+  transition: 1s ease;
 }
-.navbar.hide{
-    transform: translateY(-100%);
+.navbar.hide {
+  transform: translateY(-100%);
 }
 
 /*------------------------*\
     BANNER
 \*------------------------*/
 
-.banner{
-    background-image: linear-gradient(rgba(227, 241, 30,.5), black) ,url('../img/bannermoda.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 450px;
-    margin-top: 80px;
-    background-color: #FFF100;
-    /* filter: grayscale(100%); */
+.banner {
+  background-image: linear-gradient(rgba(227, 241, 30, 0.5), black),
+    url("../img/bannermoda.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  margin-top: 80px;
+  background-color: #fff100;
+  /* filter: grayscale(100%); */
 }
 
-.banner h1{
-    text-shadow: 5px 5px 8px #1D2D4B;;
+.banner h1 {
+  text-shadow: 5px 5px 8px #1d2d4b;
 }
 
 /*------------------------*\
 .CLIENTES QUOTE
 \*------------------------*/
 
-.clientes-quote{
-    background-color: white;
+.clientes-quote {
+  background-color: white;
 }
 
-.clientes-quote i{
-    color: #F8D700;
+.clientes-quote i {
+  color: #f8d700;
 }
-.clientes-quote h1{
-    color: #F8D700;
-    font-weight: 900;
-    padding-top: 20px;
-}
-
-.clientes-quote-depo{
-    background-color: white;
-    box-shadow: 5px 5px 15px #ccc;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 10px;
+.clientes-quote h1 {
+  color: #f8d700;
+  font-weight: 900;
+  padding-top: 20px;
 }
 
-.clientes-quote .cli-pic{
-    width: 80px !important;
-    border-radius: 50%;
-    margin-left: -65px;
-    box-shadow: 1px 0 5px;
+.clientes-quote-depo {
+  background-color: white;
+  box-shadow: 5px 5px 15px #ccc;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
 }
 
-.clientes-quote .cli-name{
-    color: #F8D700;
-    font-weight: 600;
-    font-size: 20px;
+.clientes-quote .cli-pic {
+  width: 80px !important;
+  border-radius: 50%;
+  margin-left: -65px;
+  box-shadow: 1px 0 5px;
 }
 
-.clientes-quote i{
-    font-size: 20px;
-    margin-bottom: 20px;
+.clientes-quote .cli-name {
+  color: #f8d700;
+  font-weight: 600;
+  font-size: 20px;
 }
 
-@media (max-width: 577px){
-    .clientes-quote .cli-pic{
-        margin: auto;
-        margin-top: -50px;
-    }
+.clientes-quote i {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 577px) {
+  .clientes-quote .cli-pic {
+    margin: auto;
+    margin-top: -50px;
+  }
 }
 
 /*------------------------*\
     CAROUSEL
 \*------------------------*/
 
-.owl-nav{
-    text-align: center;
-    font-size: 40px;
-    font-weight: 900;
-    color: rgb(51, 79, 116);
+.owl-nav {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: rgb(51, 79, 116);
 }
 
-.owl-prev, .owl-next{
-    margin: 10px 20px;
-    outline: none;
+.owl-prev,
+.owl-next {
+  margin: 10px 20px;
+  outline: none;
 }
 
-.owl-prev:focus, .owl-next:focus{
-    outline: none;
+.owl-prev:focus,
+.owl-next:focus {
+  outline: none;
 }
 
-.owl-moda img{
-    height: 350px;
-    cursor: pointer;
+.owl-moda img {
+  height: 350px;
+  cursor: pointer;
 }
 /*------------------------*\
     PROMO
 \*------------------------*/
 
-.promo{
-    background: linear-gradient(to right, rgba(255, 255, 255,1), rgba(255, 255, 255,.1)), url('../img/bg1.jpg'); 
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.promo {
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url("../img/bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.promo h2{
-    display: inline-block;
-    position: relative;
+.promo h2 {
+  display: inline-block;
+  position: relative;
 }
 
-.promo h2 span{
-    position: absolute;
+.promo h2 span {
+  position: absolute;
 }
 
-.promo .desconto p{
-    margin-top: -40px;
+.promo .desconto p {
+  margin-top: -40px;
 }
 
 /*------------------------*\
 .SOCIAL 2
 \*------------------------*/
 
-.social-2 a{
-    color: black;
-    font-size: 25px;
-    padding: 5px 10px;
+.social-2 a {
+  color: black;
+  font-size: 25px;
+  padding: 5px 10px;
 }
 
-.social-2 .btn-facebook i:hover{
-    color: #4267B2;
-    border-color: #4267B2;
+.social-2 .btn-facebook i:hover {
+  color: #4267b2;
+  border-color: #4267b2;
 }
 
-.social-2 .btn-instagram i:hover{
-    color: #625BDD;
-    border-color: #625BDD;
+.social-2 .btn-instagram i:hover {
+  color: #625bdd;
+  border-color: #625bdd;
 }
 
-.social-2 .btn-pinterest i:hover{
-    color: #BD081C;
-    border-color: #BD081C;
+.social-2 .btn-pinterest i:hover {
+  color: #bd081c;
+  border-color: #bd081c;
 }
 
-.social-2 .btn-whatsapp i:hover{
-    color: #28A745;
-    border-color: #28A745;
+.social-2 .btn-whatsapp i:hover {
+  color: #28a745;
+  border-color: #28a745;
 }
-.social-2 i{
-    transition: .4s ease;
-    border: 2px solid black;
-    border-radius: 50%;
-    padding: 8px;
+.social-2 i {
+  transition: 0.4s ease;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 8px;
 }
 
-.social-2 i:hover{
-    transform: scale(1.2);
-    opacity: 1;
-
+.social-2 i:hover {
+  transform: scale(1.2);
+  opacity: 1;
 }
 
 /*------------------------*\
 ENDEREÇO
 \*------------------------*/
 
-.endereco .col-2 i{
-    font-size: 20px;
-    color:  #1D2D4B;
+.endereco .col-2 i {
+  font-size: 20px;
+  color: #1d2d4b;
 }
 
-.endereco .click{
-    color: rgb(27, 83, 187);
+.endereco .click {
+  color: rgb(27, 83, 187);
 }
 
 /*------------------------*\
     FORM
 \*------------------------*/
 
-textarea, input{
-    border: none;
-    box-shadow: none;
-    border-bottom: 2px solid #ccc;
-    transition: .5s ease;
+textarea,
+input {
+  border: none;
+  box-shadow: none;
+  border-bottom: 2px solid #ccc;
+  transition: 0.5s ease;
 }
 
-textarea:focus, 
-input:focus, input:active{
-    border-bottom: 2px solid #1D2D4B;
-    outline: none;
+textarea:focus,
+input:focus,
+input:active {
+  border-bottom: 2px solid #1d2d4b;
+  outline: none;
 }
 
 /*------------------------*\
     MODAL-GALERIA
 \*------------------------*/
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 999999;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.9);
-    transition: .5 ease;
+  display: none;
+  position: fixed;
+  z-index: 999999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: 0.5 ease;
 }
-
 
 #modal-galeria .modal-content {
-    margin: auto;
-    display: block;
-    width: 90%;
-    height: 80%;
-    max-width: 700px;
-    background-color: transparent;
+  margin: auto;
+  display: block;
+  width: 90%;
+  height: 80%;
+  max-width: 700px;
+  background-color: transparent;
 }
 
-#modal-galeria img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-    max-height: calc(100vh - 200px);
+#modal-galeria img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  max-height: calc(100vh - 200px);
 }
 
 @media (max-height: 500px) {
-    #modal-galeria img{
-        max-height: 300vh;
-    }
+  #modal-galeria img {
+    max-height: 300vh;
+  }
 }
 
 #modal-galeria #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 500px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
 }
 
 #modal-galeria .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
-    
+
 #modal-galeria .close:hover,
 #modal-galeria .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
+.modal-success,
+.modal-error,
+.loading {
+  display: none;
+}
 
+footer img {
+  padding-bottom: 3px;
+}
 
-.modal-success, .modal-error, .loading{
-    display: none;
+.item {
+  background-size: cover;
+  background-position: center top;
+  height: 400px;
+  cursor: pointer;
 }
